@@ -1,0 +1,15 @@
+.footer-container {
+  display: flex;
+  color:#FFF;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  gap:28px;
+  padding-bottom:29px;
+  background-color:#000;
+}
+
+.footer-logo {
+  height: 39.44px;
+}

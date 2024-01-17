@@ -1,0 +1,17 @@
+.link{
+  padding: 15px;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.home-logo{
+  height: 68px;
+}
+
+.nav-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom:50px;
+}
