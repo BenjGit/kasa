@@ -5,6 +5,7 @@ import { Layout } from './components/Layout'
 import Home from './components/Home/'
 import About from './components/About'
 import Error from './components/Error/'
+import Logements from './components/Logements/'
 
 
 const router = createBrowserRouter([
@@ -19,10 +20,10 @@ const router = createBrowserRouter([
         path: '/about',
         element: <About />,
       },
-      // {
-      //   path: '/logement/:id',
-      //   element: <Logements />,
-      // },
+      {
+        path: '/logement/:id',
+        element: <Logements />,
+      },
       {
         path: '*',
         element: <Error />,

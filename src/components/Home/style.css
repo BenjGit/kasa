@@ -23,6 +23,7 @@
 .banner-img{
     width: 100%;
     height:100%;
+    object-fit: cover;
 }
 
 .img-container {
@@ -64,4 +65,5 @@
     position:absolute; 
     bottom: 10px;
     left: 10px; 
+    color: #FFF;
 }
