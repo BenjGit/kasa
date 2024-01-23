@@ -2,15 +2,16 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Layout } from './components/Layout'
-import Home from './components/Home/'
-import About from './components/About'
-import Error from './components/Error/'
-import Logements from './components/Logements/'
+import Home from './pages/Home'
+import About from './pages/About'
+import Error from './pages/Error'
+import Logements from './pages/Logements'
 
 
 const router = createBrowserRouter([
   {
     element: <Layout />,
+    errorElement: <Error/>,
     children: [
       {
         path: '/',
@@ -21,11 +22,11 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: '/logement/:id',
+        path: '/logements/:id',
         element: <Logements />,
       },
       {
-        path: '*',
+        path: '/404',
         element: <Error />,
       },
     ],

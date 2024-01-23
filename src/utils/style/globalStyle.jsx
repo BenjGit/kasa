@@ -2,12 +2,14 @@ import { createGlobalStyle } from 'styled-components'
 
 function GlobalStyle() {
   const StyledGlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
     :root {
         --primary-color: #FF6060;
     }
 
     * {
-        font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-weight: 500;
     }
  
