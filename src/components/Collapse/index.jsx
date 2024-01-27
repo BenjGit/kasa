@@ -10,11 +10,11 @@ function Collapse(props) {
 
     return (
         <div className='collapse-container'>
-            <div className="collapse-header" onClick={toggleCollapse}>
+            <div className="collapse-header" onClick={toggleCollapse} style={props.headerStyle}>
                 <h3 className='collapse-title'>{props.title}</h3>
                 <i className={`fa-solid fa-chevron-up ${isCollapsed ? 'rotate-back' : 'rotate'}`}></i>
             </div>
-            <div className={`collapse-content ${isCollapsed ? 'close' : 'open'}`}>
+            <div className={`collapse-content ${isCollapsed ? 'close' : 'open'}`} style={props.contentStyle}>
                 {props.description}
             </div>
         </div>

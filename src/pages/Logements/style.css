@@ -2,6 +2,13 @@
    color: var(--primary-color);
    font-size: 36px;
    font-weight: 500;
+   margin: 0;
+}
+.location{
+    color: var(--primary-color);
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
 }
 
 .cover {
@@ -9,5 +16,84 @@
     width:100%;
     height: 415px;
     object-fit: cover;
-    object-position: 0 70%;
+    object-position: 0 65%;
+}
+
+.carousel{
+    position: relative;
+    height: 415px;
+    margin-bottom: 30px;
+}
+
+.slider-count{
+    position: absolute;
+    bottom: 5%;
+    right: 50%;
+    color: #fff;
+}
+
+.next-btn,.prev-btn {
+    cursor: pointer;
+    font-size: 98px;
+    color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.next-btn{
+    position: absolute;
+    right: 10px;
+}
+
+.prev-btn{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+}
+
+.tags-container{
+    display: flex;
+    gap: 10px;
+}
+
+.tag{
+    background-color: var(--primary-color);
+    padding: 4px 30px;
+    border-radius   : 10px;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.collapses-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-container
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.owner-name{
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin: 0;
+}
+
+.owner-picture{
+    border-radius: 100%;
+    width: 64px;
+    height: 64px;
 }

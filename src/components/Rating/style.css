@@ -1,0 +1,13 @@
+.fa-star{
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+}
+
+.full-star{
+    color: var(--primary-color);
+}
+
+.empty-star{
+   color: #E3E3E3;
+}
