@@ -20,7 +20,7 @@ function Home() {
         <div className='home-wrapper'>
             <div className='img-container'>
                 <img className='home-banner' src={homeBanner}/>
-                <div className='centered-img-txt'> Chez vous, partout et ailleurs </div>
+                <div className='img-txt-position'> Chez vous,<br className='mobile-break'/> partout et ailleurs </div>
             </div>
             <div className='card-container'>
                 {logementsData.map((item) => (

@@ -19,3 +19,29 @@
   height: 223px;
   margin-bottom: 38px;
 }
+
+.info-container{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 38px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .banner-container {
+    height: 111px;
+    border-radius: 10px;
+    margin-bottom: 19px;
+  }
+
+  .about-banner{
+    height: 111px;
+    border-radius: 10px;
+  }
+
+  .info-container{
+    gap: 20px;
+  }
+
+}

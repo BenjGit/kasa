@@ -1,9 +1,9 @@
 .error-wrapper {
-  margin: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap:139px;
+  margin-top: 139px;
 }
 
 .error-img {
@@ -29,4 +29,35 @@
   font-size: 18px;
   margin:0;
   margin-bottom: 139px;
+}
+
+.mobile-break {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .error-title {
+    font-size: 96px;
+  }
+
+  .error-wrapper {
+    margin-top: 113px;
+    gap:113px;
+  }
+
+  .mobile-break {
+    display: block;
+  }
+
+  .error-subtitle {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .error-link {
+    font-size: 14px;
+    margin-bottom: 113px;
+  }
+
 }

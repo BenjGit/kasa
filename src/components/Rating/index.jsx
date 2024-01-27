@@ -3,6 +3,7 @@ import './style.css'
 function Rating({ nbStars }) {
     
     const ratingStars = parseInt(nbStars)
+    
     return (
         <div>
             {[...Array(5)].map((_, index) => (

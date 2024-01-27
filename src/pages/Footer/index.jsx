@@ -3,9 +3,11 @@ import './style.css'
 
 function Footer() {
     return(
-        <footer className='footer-container'>
-            <img className='footer-logo' src={footerLogo} />
-            © 2020 Kasa. All rights reserved
+        <footer>
+            <div className='footer-container'>
+                <img className='footer-logo' src={footerLogo} />
+                <span className='footer-txt'>© 2020 Kasa. All <br className='mobile-break'/> rights reserved</span>
+            </div>
         </footer>
     )
 }

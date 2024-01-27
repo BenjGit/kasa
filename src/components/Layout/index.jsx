@@ -1,12 +1,10 @@
 import Header from '../../pages/Header'
 import Footer from '../../pages/Footer'
-import GlobalStyle from '../../utils/style/globalStyle'
 import { Outlet } from 'react-router-dom'
 
 export function Layout() {
     return (
       <>
-          <GlobalStyle />
           <main>
             <Header />
             <Outlet />

@@ -74,24 +74,10 @@ function Logements() {
               <Collapse 
                 description={logementData.description} 
                 title='Description' 
-                headerStyle={{
-                  width:'547px',
-                  fontSize: '18px',
-                }}
-                contentStyle={{
-                  width:'547px',
-                }}
               />
               <Collapse 
                 description={logementData.equipments + ' '} 
-                title='Équipements' 
-                headerStyle={{
-                  width:'547px',
-                  fontSize: '18px',
-                }}
-                contentStyle={{
-                  width:'547px',
-                }}
+                title='Équipements'
               />
             </div>
           </div>

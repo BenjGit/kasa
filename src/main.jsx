@@ -6,12 +6,14 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Error from './pages/Error'
 import Logements from './pages/Logements'
+import { Navigate } from 'react-router-dom'
+import './globalStyle.css'
 
 
 const router = createBrowserRouter([
   {
     element: <Layout />,
-    errorElement: <Error/>,
+    errorElement: <Navigate to="/404" />,
     children: [
       {
         path: '/',
