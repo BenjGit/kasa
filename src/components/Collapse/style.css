@@ -8,8 +8,12 @@
     font-size: 24px;
     font-weight: 500;
     color: #fff;
-    width: 1023px;
+    width: calc(100% - 40px);
     z-index: 2;
+}
+
+.collapse-50{
+    width: 50%;
 }
   
 .collapse-title{
@@ -21,14 +25,13 @@
     color: var(--primary-color);
     font-size: 18px;
     font-weight: 400;
-    width: 1023px;
-    padding: 0;
+    width: calc(100% - 40px);
+    padding: 20px;
     max-height: 0;
 }
 
 .collapse-container{
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
@@ -42,23 +45,24 @@
 .rotate-back{
     transform: rotate(0deg);
     transition: transform 0.3s ease;
+    
 }
 
 .open {
-    max-height: 100px;
-    animation: unwrap 0.3s ease-out;
-    overflow: hidden;
-    padding: 20px;
+    transition: 500ms ease-in;
+    max-height: 200px;
 }
 
 .close {
-    padding: 0;
+    transition: 500ms ease-in;
+    transform: translateY(-500%);
     max-height: 0;
-    animation: unwrap-back 0.3s ease-out;
+    padding: 0;
     overflow: hidden;
+    
 }
 
-@keyframes unwrap {
+/* @keyframes unwrap {
     from {
         transform: translateY(-200%);
         max-height: 0;
@@ -86,7 +90,7 @@
         max-height: 0;
         padding: 0px;
     }
-}   
+}    */
 
 
 @media only screen and (max-width: 768px) {
@@ -116,5 +120,9 @@
 
     .fa-chevron-up{
         font-size: 20px;
+    }
+
+    .collapse-50{
+        width: 100%;
     }
 }

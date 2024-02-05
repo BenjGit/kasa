@@ -9,7 +9,7 @@ function Collapse(props) {
     };
 
     return (
-        <div className='collapse-container'>
+        <div className={`collapse-container ${props.isHalf ? 'collapse-50' : ''}`} style={props.containerStyle}>
             <div className="collapse-header" onClick={toggleCollapse} style={props.headerStyle}>
                 <h3 className='collapse-title'>{props.title}</h3>
                 <i className={`fa-solid fa-chevron-up ${isCollapsed ? 'rotate-back' : 'rotate'}`}></i>

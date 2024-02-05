@@ -40,13 +40,17 @@ function Logements() {
 
     return (
         <div>
-          {logementData ? (
+          {logementData && (
           <div className='container'>
             <div className='carousel'>
-              <img className='cover' src={logementData.pictures[currentImage]} alt={`Slide ${currentImage + 1}`} />
-              <i onClick={prevImage} className="fa-solid fa-chevron-left prev-btn"></i>
-              <i onClick={nextImage} className="fa-solid fa-chevron-right next-btn"></i>
-              <span className='slider-count'>{currentImage +1}/{logementData.pictures.length}</span>
+                <img className='cover' src={logementData.pictures[currentImage]} alt={`Slide ${currentImage + 1}`} />
+                {logementData.pictures.length > 1 && (
+                  <>
+                    <i onClick={prevImage} className="fa-solid fa-chevron-left prev-btn"></i>
+                    <i onClick={nextImage} className="fa-solid fa-chevron-right next-btn"></i>
+                    <span className='slider-count'>{currentImage +1}/{logementData.pictures.length}</span>
+                  </>
+                )}
             </div>
             <div className='content-container'>
               <div className='left-col'>
@@ -74,15 +78,22 @@ function Logements() {
               <Collapse 
                 description={logementData.description} 
                 title='Description' 
+                isHalf='true'
               />
               <Collapse 
-                description={logementData.equipments + ' '} 
+                description={logementData.equipments.join('\n')} 
                 title='Équipements'
+                isHalf='true'
+                headerStyle={{
+                  fontSize: '18px',
+                }}
+                contentStyle={{
+                  whiteSpace: 'pre-line',
+                  lineHeight: '142.6%',
+                }}
               />
             </div>
           </div>
-          ) : (
-            <p>Chargement des détails du logement...</p>
           )}
         </div>
     )
