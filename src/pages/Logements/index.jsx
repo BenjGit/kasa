@@ -79,6 +79,13 @@ function Logements() {
                 description={logementData.description} 
                 title='Description' 
                 isHalf='true'
+                headerStyle={{
+                  fontSize: '18px',
+                }}
+                contentStyle={{
+                  whiteSpace: 'pre-line',
+                  lineHeight: '142.6%',
+                }}
               />
               <Collapse 
                 description={logementData.equipments.join('\n')} 

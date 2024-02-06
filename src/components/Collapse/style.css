@@ -49,48 +49,19 @@
 }
 
 .open {
-    transition: 500ms ease-in;
+    transition: 300ms ease;
     max-height: 200px;
 }
 
 .close {
-    transition: 500ms ease-in;
-    transform: translateY(-500%);
+    transition: 250ms ease;
+    transform: translateY(-100px);
     max-height: 0;
     padding: 0;
     overflow: hidden;
     
 }
 
-/* @keyframes unwrap {
-    from {
-        transform: translateY(-200%);
-        max-height: 0;
-        height: 1px;
-    }
-    
-    to{
-        transform: translateY(0);
-        height: 44px;
-        max-height: 100px;
-    }
-}   
-
-@keyframes unwrap-back {
-    from {
-        transform: translateY(0);
-        max-height: 100px;
-        height: 44px;
-        padding: 20px;
-    }
-    
-    to{
-        transform: translateY(-200%);
-        height: 1px;
-        max-height: 0;
-        padding: 0px;
-    }
-}    */
 
 
 @media only screen and (max-width: 768px) {
